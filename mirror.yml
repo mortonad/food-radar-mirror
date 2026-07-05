@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 取出 repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: 抓取食藥署資料
         run: python3 fetch_mirror.py
