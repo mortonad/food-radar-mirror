@@ -1,0 +1,24 @@
+{
+  "mirrored_at": "2026-07-05T01:12:55.459937+00:00",
+  "sources": {
+    "52": {
+      "url": "https://data.fda.gov.tw/data/opendata/export/52/json",
+      "ok": true,
+      "count": 2481,
+      "format": "JSON",
+      "recent_count": 2134
+    },
+    "5": {
+      "url": "https://data.fda.gov.tw/data/opendata/export/5/json",
+      "ok": false,
+      "error": "HTTP 404"
+    },
+    "22": {
+      "url": "https://data.fda.gov.tw/data/opendata/export/22/json",
+      "ok": true,
+      "count": 59378,
+      "format": "ZIP內22_5.json",
+      "recent_count": 59378
+    }
+  }
+}
