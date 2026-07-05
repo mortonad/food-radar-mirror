@@ -1,0 +1,29 @@
+# 食安雷達 每日鏡像
+# 放置路徑（在你的 repo 裡）：.github/workflows/mirror.yml
+name: 食安雷達每日鏡像
+
+on:
+  schedule:
+    - cron: "45 22 * * *"   # UTC 22:45 = 台北 06:45，趕在 GAS 08:00 掃描前
+  workflow_dispatch: {}      # 讓你可以在 Actions 頁面手動按「Run workflow」測試
+
+permissions:
+  contents: write            # 允許把資料 commit 回 repo
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取出 repo
+        uses: actions/checkout@v4
+
+      - name: 抓取食藥署資料
+        run: python3 fetch_mirror.py
+
+      - name: 提交更新
+        run: |
+          git config user.name "food-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && echo "今日無變化" || git commit -m "mirror: $(date -u +%F)"
+          git push
