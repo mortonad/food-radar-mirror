@@ -1,12 +1,12 @@
 {
-  "mirrored_at": "2026-07-29T23:40:19.803730+00:00",
+  "mirrored_at": "2026-07-30T23:39:56.662646+00:00",
   "sources": {
     "52": {
       "url": "https://data.fda.gov.tw/data/opendata/export/52/json",
       "ok": true,
-      "count": 2510,
+      "count": 2522,
       "format": "JSON",
-      "recent_count": 2117
+      "recent_count": 2129
     },
     "5": {
       "url": "https://data.fda.gov.tw/data/opendata/export/5/json",
