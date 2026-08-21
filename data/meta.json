@@ -1,12 +1,12 @@
 {
-  "mirrored_at": "2026-08-20T23:01:07.650125+00:00",
+  "mirrored_at": "2026-08-21T22:58:39.318317+00:00",
   "sources": {
     "52": {
       "url": "https://data.fda.gov.tw/data/opendata/export/52/json",
       "ok": true,
       "count": 2559,
       "format": "JSON",
-      "recent_count": 2118
+      "recent_count": 2098
     },
     "5": {
       "url": "https://data.fda.gov.tw/data/opendata/export/5/json",
@@ -16,9 +16,9 @@
     "22": {
       "url": "https://data.fda.gov.tw/data/opendata/export/22/json",
       "ok": true,
-      "count": 60073,
+      "count": 60411,
       "format": "ZIP內22_5.json",
-      "recent_count": 60073
+      "recent_count": 60411
     }
   }
 }
